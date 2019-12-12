@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.view.ChoiceOverviewController">
+    <children>
+        <VBox alignment="CENTER" layoutX="117.0" layoutY="100.0" prefHeight="200.0" prefWidth="366.0"
+              AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="117.0" AnchorPane.rightAnchor="117.0"
+              AnchorPane.topAnchor="100.0">
+            <children>
+                <HBox alignment="CENTER" prefHeight="120.0" prefWidth="304.0" spacing="80.0">
+                    <children>
+                        <ImageView fx:id="eventImg" cache="true" fitHeight="150.0" fitWidth="120.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../../../resurses/event.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="adminImg" cache="true" fitHeight="120.0" fitWidth="207.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@../../../resurses/admin.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" prefHeight="100.0" prefWidth="436.0" spacing="50.0">
+                    <children>
+                        <Button mnemonicParsing="false" onAction="#handlePerformance" text="Мероприятия"/>
+                        <Button mnemonicParsing="false" onAction="#handleAdmin" text="Панель администратора"/>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
